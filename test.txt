@@ -1,0 +1,20 @@
+Ans 1. Function is a block of codeto perfome a task.it is execute call after sometime.
+Ans 3. variables are containers for storing data.we can create a variable is Let keyword.
+Ans 4.There are eight data types in js.But seven data types are primitive data types,and ane is special data types
+         1 String
+          2 Number
+          3 Boolean
+           4 Null 
+            5 Undefined
+             6 Symbol
+             7 Bigint
+              8 Object(special data type)
+Ans 5 Branching ,perform to many case but execute one case at a time.
+Ans 6 In java script, AND operator find first false value and then return.
+
+Ans7  Two example of unary operator-
+          1types of operators.
+           2 Not operator
+Ans 10. Object is a special data type.it is use to declare an object in variable ,to use a specific class type.
+Ans 9. get elementSBYClassName() return HTML COLLECTION.
+

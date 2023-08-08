@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+           text-align: center;
+           margin-top: 100px;
+        }
+        .container{
+            border: 1px solid;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            width:305px;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h2> Tic Tac Toe</h2>
+    
+        <div class="container">
+           <div class="box" id="1" onclick="takeTurn(1)"></div>
+           <div class="box"  id="2" onclick="takeTurn(2)"></div>
+           <div class="box"  id="3" onclick="takeTurn(3)"></div>
+           <div class="box"  id="4" onclick="takeTurn(4)"></div>
+           <div class="box" id="5" onclick="takeTurn(5)"></div>
+           <div class="box" id="6" onclick="takeTurn(6)"></div>
+           <div class="box"  id="7"onclick="takeTurn(7)"></div>
+           <div class="box"  id="8"onclick="takeTurn(8)"></div>
+           <div class="box" id="9" onclick="takeTurn(9)"></div>
+        </div>
+        
+    </body>
+
+    <script> 
+    var numberOfClicks = 0;
+        function takeTurn(id){
+            var clickedBox = document.getElementById(id);
+            numberOfClicks++;
+            clickedBox.innerText = numberOfClicks % 2 !== 0 ? "x" :"0";
+            clickedBox.style.pointerEvents = "none";
+                }
+    </script>
+
+</html>

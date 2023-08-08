@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:100px;
+            width: 100px;
+            
+            border:2px solid;
+            margin:10px;
+        
+            
+
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div  id="box1" class="box" onclick="clickablediv('box1')"></div>
+    <div id="box2" class="box" onclick="clickablediv('box2')"></div>
+    <div id="box3" class="box" onclick="clickablediv('box3')"></div>
+    <div  id="box4" class="box" onclick="clickablediv('box4')"></div>
+    <div  id="box5" class="box" onclick="clickablediv('box5')"></div>
+    <div  id="box6" class="box" onclick="clickablediv('box6')"></div>
+    <div  id="box7" class="box" onclick="clickablediv('box7')"></div>
+    <div  id="box8" class="box" onclick="clickablediv('box8')"></div>
+    <div  id="box9" class="box" onclick="clickablediv('box9')"></div>
+    <div  id="box10" class="box" onclick="clickablediv('box10')"></div>
+    
+
+    
+</body>
+<script>
+ 
+ function clickablediv(id) {
+     
+   var box = document.getElementById(id);
+   if (box.classList.length === 1){
+    box.classList.add("green");
+   }else {
+    box.classList.remove("green");
+   }
+ }
+</script>
+</html>

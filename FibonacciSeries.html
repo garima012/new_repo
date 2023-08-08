@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><br/>
+        <input  id="num1" type="text" placeholder="Enter num1">
+        <br><br>
+        <button onclick="createFibonacci()">Submit</button>
+        <div> Fibonacci Series: <spam id="result"></spam></div>
+        </center>
+
+        <script>
+            function createFibonacci() {
+                var length= Number(document.getElementById("num1").value);
+                if(length === 1){
+                    document.getElementById("result").innerText = "0";
+                } else if(length === 2){
+                    document.getElementById("result").innerText = "0,1";
+                } else{
+                     var series = "0, 1";
+                     var lastNumber = 1;
+                     var secondLastNumber = 0;
+
+                    for( var i = 3; i<= length; i++){
+
+                    var nextNumber = lastNumber + secondLastNumber;
+                    series = series + "," + nextNumber;
+                    lastNumber = nextNumber;
+                    secondLastNumber =lastNumber;
+                    
+                    }
+                    document.getElementById("result").innerText = series;
+                }
+
+                }
+            
+            
+        </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center; ">Simple Arithmetic Calculator</h2><hr/><br>
+    <center>
+ 
+        <input id="num1" type="text" placeholder="Enter num1">
+        
+        <input id="num2"  type="text" placeholder="Enter num2"><br><br>
+
+    
+        <select id="operation">
+            <option value="empty">Select an operation</option>
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select><br><br>
+   <button onclick=" calculate()">Calculate</button><br><br>
+        <input id="result" placeholder="Result">
+   
+</center>
+
+<script>
+    function calculate()
+           {
+    var operationToPerform = document.getElementById("operation").value;
+  var num1 = Number(document.getElementById("num1").value);
+  var num2 = Number(document.getElementById("num2").value);
+  var result;
+  switch ( operationToPerform) {
+
+      case "plus":
+          document.getElementById("result").value=num1+num2;
+          break;
+
+      case "minus":
+      document.getElementById("result").value=num1-num2;
+          break;
+
+      case "multiply":
+      document.getElementById("result").value=num1*num2;
+          break;
+
+      case "divide":
+
+      document.getElementById("result").value=num1/num2;
+          break;
+
+      default:
+          document.getElementById("result").value="please select an operation";
+          break;
+        
+         
+}
+         document.getElementById("num1").value = "";
+         document.getElementById("num2").value = "";
+
+  }
+</script>
+    
+</body>
+</html>

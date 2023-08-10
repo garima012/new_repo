@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <center>
+        <div> 
+          Current Penalty value:
+          <span id="penaltyvalue"> 0</span>
+        </div><br/>
+        <input id = "input1" type="number"  placeholder="Enter Custom value"/>
+        <button onclick="addPenalty()">+ 10</button><br/><br/>
+      
+        <button onclick="addCustomValue()">Add Custom Value</button><br /><br/>
+        
+      </center>
+</body>
+<script>
+  var currentValue = 0;
+    function addPenalty(){
+     document.getElementById("penaltyvalue").innerText = 
+      currentValue  + 10;
+      currentValue = currentValue +10 ;
+    }
+     
+     function addCustomValue(){
+     var inputValue = Number (document.getElementById("input1").value);
+      currentValue += inputValue;
+       document.getElementById("penaltyvalue").innerText =currentValue;
+     }
+</script>
+</html>
